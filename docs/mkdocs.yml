@@ -1,0 +1,8 @@
+site_name: APIRESTful
+repo_url: https://https://github.com/RaulRangelMB/Cloud-Projeto-24.2
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Inicialização: setup.md
+  - Endpoints: endpoints.md
