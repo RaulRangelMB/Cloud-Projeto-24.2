@@ -7,7 +7,7 @@ Feito por Raul Rangel Moraes Bezerra
 
 ## Documentação
 
-A documentação está dispoível no GitHub Pages através [desse link](https://www.google.com)
+A documentação está disponível no GitHub Pages através [desse link](https://www.google.com)
 
 ## Docker
 
