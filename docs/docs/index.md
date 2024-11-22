@@ -21,3 +21,10 @@ Minha API faz uso de um endpoint da API da [CoinCap](https://coincap.io), que fo
 ## Endpoints
 
 [Clique aqui](endpoints.md) para ver os Endpoints disponíveis na minha API.
+
+## Vídeo de Funcionamento
+
+<video controls width="800">
+  <source src="img/Execucao.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos embutidos.
+</video>
