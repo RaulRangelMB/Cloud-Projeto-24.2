@@ -6,7 +6,7 @@ Bem-vindo à documentação oficial do projeto **APIRESTful**! Este projeto é u
 
 ## CoinCap
 
-Minha API faz uso de um endpoint da API da [CoinCap](https://coincap.io), que fornece informações sobre o mercado de criptomoedas em tempo real. Esse serviço é utilizado para consultar dados sobre ativos digitais, como o valor atual de várias moedas. Através dessa integração, os usuários podem obter informações atualizadas sobre as dez criptomoedas com maior market cap pela minha aplicação.
+Minha API faz uso de um endpoint da API da [CoinCap](https://coincap.io), que fornece informações sobre o mercado de criptomoedas em tempo real. Esse serviço é utilizado para consultar dados sobre ativos digitais, como o valor atual de várias moedas. Através dessa integração, os usuários podem obter informações atualizadas sobre as dez criptomoedas com maior Market Cap através da minha aplicação.
 
 ![CoinCap](img/coincap.png)
 
@@ -20,4 +20,4 @@ Minha API faz uso de um endpoint da API da [CoinCap](https://coincap.io), que fo
 
 ## Endpoints
 
-[Clique aqui](endpoints) para ver os Endpoints disponíveis na minha API.
+[Clique aqui](endpoints.md) para ver os Endpoints disponíveis na minha API.

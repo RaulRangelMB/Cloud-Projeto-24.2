@@ -36,6 +36,10 @@ Se o email já estiver registrado, a API retornará um erro 409. Se o registro f
 }
 ```
 
+### Exemplo de funcionamento
+
+![registrar](img/registrar.png)
+
 ---
 
 ## 2. Login de Usuário
@@ -69,6 +73,10 @@ Se não for possível verificar o login, a API retornará um erro 401. SeSe o re
   "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsb3VkQGluc3Blci5lZHUuYnIiLCJleHAiOjE3MzIyNzc0Nzh9.DF2dEM5oT87uSGxIm-8GAq4OGiRHj5tz-MALn5nZLuI"
 }
 ```
+
+### Exemplo de funcionamento
+
+![login](img/login.png)
 
 ---
 
@@ -118,5 +126,9 @@ Authorization: Bearer token_jwt
   (...)
 ]
 ```
+
+### Exemplo de funcionamento
+
+![consultar](img/consultar.png)
 
 ---
