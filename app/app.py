@@ -50,9 +50,6 @@ def create_access_token(data: dict):
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
-@app.get("/")
-async def root():
-    return {"message": "Página inicial"}
 
 @app.post("/registrar")
 async def registrar(user: UserBase):
@@ -76,6 +73,7 @@ async def registrar(user: UserBase):
 
     return {"jwt": jwt_token}
 
+
 @app.post("/login")
 async def login(user: UserLogin):
     db = session()
@@ -96,12 +94,6 @@ async def login(user: UserLogin):
 
     return {"jwt": jwt_token}
 
-@app.get("/dados")
-async def dados():
-    db = session()
-    users = db.query(User).all()
-    db.close()
-    return users
 
 @app.get("/consultar")
 async def consultar(token: str = Header(None)):
