@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-usuario}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-senha}
+      POSTGRES_DB: ${POSTGRES_DB:-banco}
+  app:
+    image: raulrangelmb/api-coin:latest
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-usuario}:${POSTGRES_PASSWORD:-senha}@db:5432/${POSTGRES_DB:-banco}
+      SECRET_KEY: ${SECRET_KEY:-secret_key}
+    restart: always

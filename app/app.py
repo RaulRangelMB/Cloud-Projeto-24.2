@@ -1,21 +1,41 @@
 from fastapi import FastAPI, HTTPException, Header
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, Column, Integer, String
 import jwt
 from datetime import datetime, timedelta
 import bcrypt
 import requests
+import os
+from sqlalchemy.ext.declarative import declarative_base
+from pydantic import BaseModel
 
-from models import *
-from schemas import *
+class UserBase(BaseModel):
+    nome : str
+    email : str
+    senha : str
+
+class UserLogin(BaseModel):
+    email : str
+    senha : str
+
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = 'users'
+
+    id = Column(Integer, primary_key=True)
+    nome = Column(String(100))
+    email = Column(String(100))
+    senha = Column(String)
 
 app = FastAPI()
 
-SECRET_KEY = "my_secret_key"
+SECRET_KEY = os.getenv("SECRET_KEY", "secret_key")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
-DATABASE_URL = "sqlite:///./test.db"
+# DATABASE_URL = "sqlite:///./test.db"
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://usuario:senha@db/banco")
 engine = create_engine(DATABASE_URL, echo=False)
 session = sessionmaker(bind=engine)
 
