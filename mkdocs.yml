@@ -6,3 +6,4 @@ nav:
   - Home: index.md
   - Inicialização: setup.md
   - Endpoints: endpoints.md
+  - AWS: aws.md

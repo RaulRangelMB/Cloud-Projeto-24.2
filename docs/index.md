@@ -28,3 +28,7 @@ Minha API faz uso de um endpoint da API da [CoinCap](https://coincap.io), que fo
   <source src="img/Execucao.mp4" type="video/mp4">
   Seu navegador não suporta vídeos embutidos.
 </video>
+
+## AWS
+
+[Clique aqui](aws.md) para ver o deploy na AWS.
