@@ -9,6 +9,8 @@ Vídeo do projeto funcionando pela AWS:
   Seu navegador não suporta vídeos embutidos.
 </video>
 
+Se o vídeo acima não carregar, [veja pelo YouTube](https://youtu.be/46CrG9Q2CgI)
+
 ## Configuração do Cluster EKS
 
 [Clique aqui](http://ad85d9fe678ee45198899e28fd849e1e-1790702094.us-east-2.elb.amazonaws.com/docs) para acessar a documentação da API
